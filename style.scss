@@ -82,7 +82,7 @@ ul{
     justify-content: center;
     align-items: center;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     height: calc(var(--main-m) * 9 / 16);
     padding: 0px;
 
@@ -536,3 +536,86 @@ bottom:-20%;
     top: 50%;
     width: 14px;
   }
+
+ /* -------------------------------------------------------
+
+        SMALL SCREENS
+
+--------------------------------------------------------*/
+
+
+  @media only screen and (max-width: 1050px) {
+    .nav-space{
+        justify-content: center;
+    }
+    .nav-space :nth-child(2){
+        display: none;
+    }
+
+    .small-text h2{
+        color: var(--red);
+    }
+    .small-text p{
+    font-size: larger;
+    width: 100%;
+    }
+
+    .left p{
+        width: 100%;
+    }
+    .big-text-container{
+        height: 10vh
+    }
+    .big-text-container h1{
+        width: 90vw;
+        margin: 0em;
+        color: gray;
+        font-size: 5vw;
+    }
+    .container-2up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container-2up{
+        .main-carousel{
+
+            width: 100%;
+        }
+    }
+    .expanding3x2{
+        flex-direction: column;
+        .text-jump{
+            display: none;
+        }
+        
+    }
+    .expanding-col{
+        height: 33vh;
+        width: 100%;
+        flex-shrink: 8;
+        transition: all .5s;
+        div{
+            height: 100%;
+        }
+        .clear3d{
+            background-image: url(gifs/Clear_3d.gif)
+        }
+        
+        .clearCel{
+            background-image: url(gifs/Clear_Cel_1.gif)
+        }
+        
+        .clearMain{
+            background-image: url(gifs/Clear_main.gif)
+        }
+    
+    }
+    
+    .expanding-col:hover{
+        width:95%;
+        flex-grow: 8;
+        transition: all .5s;
+    }
+}
