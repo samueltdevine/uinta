@@ -1,0 +1,575 @@
+/* ---------------------------
+
+            normalizing
+
+----------------------------*/
+body {
+  background-color: white;
+  margin: 0px;
+}
+
+text, span, p, h1, h2, h3, h4, h5, h6, textarea, li {
+  font-family: inter, helvetica, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: geogrotesque, helvetica, arial, sans-serif;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ---------------------------
+
+            utilities 
+
+----------------------------*/
+:root {
+  --main-m: 90vw;
+  --red: #C8102E;
+  --maroon: #762529;
+}
+
+.main-margin {
+  width: var(--main-m);
+  margin: auto;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.margin-bottom {
+  margin-bottom: 4em;
+}
+
+.fw-img {
+  width: 100%;
+}
+
+.fw-img img, video {
+  width: 100%;
+}
+
+/* ---------------------------
+
+        4 corners
+
+----------------------------*/
+.overlay {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 3;
+  width: 10vw;
+  position: relative;
+  pointer-events: none;
+}
+
+.corners-container {
+  position: relative;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  height: calc(var(--main-m) * 9 / 16);
+  padding: 0px;
+}
+
+.image-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.corners-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.static {
+  position: relative;
+  background: white;
+}
+
+.static:hover {
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.gif-container {
+  position: relative;
+}
+
+/* ---------------------------
+
+        nav
+
+----------------------------*/
+.nav {
+  background-color: #C8102E;
+}
+
+.nav-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-logo {
+  width: 15vh;
+  padding: 20px;
+}
+
+.nav li a {
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* ---------------------------
+
+            splash
+
+----------------------------*/
+.splash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.splash-img {
+  padding: 0px;
+  width: 35vw;
+  height: 80%;
+}
+
+/* ---------------------------
+
+        big text treatment
+
+----------------------------*/
+.big-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25vh;
+}
+
+.big-text-container h1 {
+  width: 90vw;
+  margin: 0em;
+  color: gray;
+  font-size: 5vh;
+}
+
+/* ---------------------------
+
+        small text
+
+----------------------------*/
+.small-text h2 {
+  color: var(--red);
+}
+
+.small-text p {
+  width: 50%;
+}
+
+.left p {
+  width: 33%;
+}
+
+/* ---------------------------
+
+        2up container
+
+----------------------------*/
+.container-2up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ---------------------------
+
+        flickity fish
+
+----------------------------*/
+.main-carousel {
+  width: 50%;
+}
+
+.cell {
+  width: 100%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.flickity-button {
+  background: transparent;
+}
+
+.flickity-button-icon {
+  fill: var(--red);
+}
+
+.flickity-page-dots .dot {
+  background: transparent;
+  border: 2px solid var(--red);
+}
+
+/* ---------------------------
+
+        music page
+
+----------------------------*/
+.music-container {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  height: 75vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.music-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 50%;
+  background-color: var(--red);
+  padding: 20px;
+  padding-right: 40px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.music-text li {
+  list-style: none;
+  color: white;
+  text-align: end;
+  font-size: xx-large;
+  white-space: nowrap;
+  width: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.music-text-active li {
+  color: var(--red);
+  width: 0;
+  font-size: xx-large;
+  text-align: end;
+  list-style: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.music-text-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  padding-left: 40px;
+  background-color: white;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.play-img {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.play-img-active {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(images/harmonica.jpg);
+  background-size: cover;
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.playpause label {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  border-color: transparent transparent transparent var(--red);
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+  cursor: pointer;
+  border-style: double;
+  border-width: 0 0 0 60px;
+}
+
+.playpause input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.playpause input[type="checkbox"]:checked + label {
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+
+/* ---------------------------
+
+        3x2 grid
+
+----------------------------*/
+.expanding3x2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
+}
+
+.expanding-col {
+  height: 80vh;
+  width: 33%;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.expanding-col:hover {
+  width: 66%;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.expanding-col:hover span {
+  bottom: 50%;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.expanding-col div {
+  width: 100%;
+  height: 50%;
+}
+
+.text-jump {
+  text-align: center;
+  position: relative;
+}
+
+.text-jump span {
+  color: #A5629A;
+  z-index: -1;
+  text-align: center;
+  font-size: larger;
+  right: 0%;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+
+.jump-up span {
+  bottom: -20%;
+}
+
+.jump-down span {
+  bottom: 120%;
+}
+
+.expanding-col:hover .clear3d {
+  background-image: url(gifs/Clear_3d.gif);
+}
+
+.expanding-col:hover .clearCel {
+  background-image: url(gifs/Clear_Cel_1.gif);
+}
+
+.expanding-col:hover .clearMain {
+  background-image: url(gifs/Clear_main.gif);
+}
+
+.bg-img {
+  background: white;
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.clear3d {
+  background-color: #82B5DC;
+}
+
+.clearCel {
+  background-color: #F0DEA2;
+}
+
+.clearMain {
+  background-color: #A5629A;
+}
+
+/* ---------------------------
+
+        sb grid
+
+----------------------------*/
+.sb-grid {
+  overflow: hidden;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.sb-grid .grid-child {
+  position: relative;
+}
+
+.sb-grid .grid-child img {
+  width: 100%;
+}
+
+.sb-grid .grid-child .revealed {
+  position: absolute;
+  opacity: 0;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all .5s ease-in;
+}
+
+.sb-grid :nth-child(1) .revealed {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.sb-grid :nth-child(2) .revealed {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.sb-grid :nth-child(3) .revealed {
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+.sb-grid :nth-child(4) .revealed {
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+
+.sb-grid:hover .grid-child .revealed {
+  opacity: 100;
+  top: 0%;
+  -webkit-transition: top .5s ease-out;
+}
+
+.sb-grid:hover :nth-child(1) .revealed {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.sb-grid:hover :nth-child(2) .revealed {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.sb-grid:hover :nth-child(3) .revealed {
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+.sb-grid:hover :nth-child(4) .revealed {
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+/*# sourceMappingURL=style.css.map */
