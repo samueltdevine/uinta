@@ -669,6 +669,7 @@ ul {
         flex-shrink: 8;
     -webkit-transition: all .5s;
     transition: all .5s;
+    padding-bottom: 2em;
   }
   .expanding-col div {
     height: 100%;
@@ -689,6 +690,39 @@ ul {
             flex-grow: 8;
     -webkit-transition: all .5s;
     transition: all .5s;
+  }
+  .corners-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .corners-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .z2 {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+  .image-container {
+    position: unset;
+  }
+  .gif-container {
+    padding-bottom: 2em;
+  }
+  .music-text li {
+    font-size: large;
+  }
+  .music-text-active li {
+    font-size: large;
   }
 }
 /*# sourceMappingURL=style.css.map */
